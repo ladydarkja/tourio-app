@@ -30,15 +30,14 @@ export default function CreatePlacePage() {
     if (response.ok) {
       mutate();
     }
-
-    return (
-      <>
-        <h2 id="add-site">Add Site</h2>
-        <Link href="/" passHref legacyBehavior>
-          <StyledBackLink>back</StyledBackLink>
-        </Link>
-        <Form onSubmit={addSite} formName={"add-site"} />
-      </>
-    );
   }
+  return (
+    <>
+      <h2 id="add-site">Add Site</h2>
+      <Link href="/" passHref legacyBehavior>
+        <StyledBackLink>back</StyledBackLink>
+      </Link>
+      <Form onSubmit={addSite} formName={"add-site"} />
+    </>
+  );
 }
